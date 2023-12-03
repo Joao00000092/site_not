@@ -1,0 +1,91 @@
+/*CORES
+    #36D1BE  titulo
+    #a9e9db caixas texto
+    #EDFFF9 fundo
+    #333042 header
+*/
+
+
+/* Padrão */
+img{
+    height: 100%;
+    width: 100%;
+} 
+body{
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #EDFFF9;
+} 
+
+
+
+
+/* HEADER */
+.header{
+    /* Flexbox */
+    display: flex; 
+    
+
+    /* Caixa */
+    background-color: #333042;
+    height: 120px;
+    width: 100%;
+    margin-top: 0%;
+}
+
+    #logo-container{
+        display: flex;
+        align-items: center;
+
+        font-size: xx-large;
+        font-family: "Lucida Console", monospace;
+        color: #36D1BE;
+        
+        width: 30%;
+        margin-left: 30px;
+
+        cursor: pointer;
+    }
+    
+    .login-container{
+        display: flex;
+        justify-content: flex-end;
+
+        padding: 10px;
+        margin-top: -25px;
+    }
+        #login{
+            cursor: pointer;
+            font-family: sans-serif;
+
+            color: #a9e9db;
+        }
+
+    .categorias-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        
+        width: 70%;
+    }
+        .categorias{
+            border-radius: 10%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+
+            font-family: "Monaco", monospace;
+            font-size: 20px;
+            color: #a9e9db;
+        }
+
+    /* LOGIN */
+    #login-container{
+        
+        width: 100em;
+        height: 100em;
+    }
+        #login{
+            width: 10px;
+        }

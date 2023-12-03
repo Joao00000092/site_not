@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxel</title>
+
+    <link rel="stylesheet" href="SiteLogin.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+    
+        <!-- Logo esquerda -->
+        <div id="logo-container">
+            
+            <h1>Voxel 🌐</h1>
+        
+        </div>
+        
+        <!-- Ctegorias centro-->
+        <div class="categorias-container">
+            <div class="categorias" onclick="acharPolitica()" onmouseover="animarHeader(this)" onmouseout="retornar(this)">
+                <p>Política</p>
+            </div>
+
+            <div class="categorias" onclick="acharEsportes()" onmouseover="animarHeader(this)" onmouseout="retornar(this)">
+                <p>Esportes</p>
+            </div>
+
+            <div class="categorias" onclick="acharEconomia()" onmouseover="animarHeader(this)" onmouseout="retornar(this)">
+                <p>Economia</p>
+            </div>
+            
+            <div class="categorias" onclick="acharDiversos()" onmouseover="animarHeader(this)" onmouseout="retornar(this)">
+                <p>Diversos</p>
+            </div>
+        </div>
+                
+        <!-- Login direita-->
+        <div class="login-container">
+            
+            <h5 id="login" onclick="SiteLogin()"><u> Login </u></h5>
+
+        </div>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="login-container">
+        <div id="login">
+            <form method="POST">
+                <label>
+                  Insira seu nome:
+                  <input name="submitted-name" id="nome" autocomplete="name" />
+                </label>
+                <label>
+                    <br>Insira sua senha:
+                    <input type="password" id="senha">
+                  </label>
+                  <button type="button" onclick="validateForm()">Submit</button>
+              </form>
+              <h1 id="name"></h1>
+
+        </div>
+    </div>
+
+    
+
+<script src="SiteLogin.js"></script>

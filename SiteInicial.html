@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxel</title>
+
+    <link rel="stylesheet" href="SiteInicial.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+    
+        <!-- Logo esquerda -->
+        <div id="logo-container">
+            
+            <h1>Voxel 🌐</h1>
+        
+        </div>
+        
+        <!-- Ctegorias centro-->
+        <div class="categorias-container">
+            <div class="categorias" onclick="acharPolitica()" onmouseover="animarHeader(this)" onmouseout="retornar(this)">
+                <p>Política</p>
+            </div>
+
+            <div class="categorias" onclick="acharEsportes()" onmouseover="animarHeader(this)" onmouseout="retornar(this)">
+                <p>Esportes</p>
+            </div>
+
+            <div class="categorias" onclick="acharEconomia()" onmouseover="animarHeader(this)" onmouseout="retornar(this)">
+                <p>Economia</p>
+            </div>
+            
+            <div class="categorias" onclick="acharDiversos()" onmouseover="animarHeader(this)" onmouseout="retornar(this)">
+                <p>Diversos</p>
+            </div>
+        </div>
+                
+        <!-- Login direita-->
+        <div class="login-container">
+            <a href="SiteLogin.html">
+            <h5 id="login" onclick="SiteLogin()"><u> Login </u></h5>
+        </a>
+
+        </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="body">
+        
+        <!-- Carrossel esqueda -->
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <img src="img/BootCamps.png" alt=" 1">
+                <img src="img/html5.jpg" alt=" 2">
+                <img src="img/SuperDev.jpg" alt=" 3">
+                <!-- Adicione mais imagens conforme necessário -->
+              </div>
+              <button onclick="prevSlide()">Anterior</button>
+              <button onclick="nextSlide()">Próximo</button>
+        </div>
+
+        <div class="separador"></div>
+
+        <!-- Informativos direita -->
+        <div class="informativos">
+            <div class="iitem1">
+                <h4>Cursos com certificado gratuito</h4>
+            </div>
+            
+            <div class="iitem1">
+                <h4>Eventos especiais do mês de Dezembro</h4>
+            </div>
+            
+            <div class="iitem1">
+                <h4>Acesse os nossos canais de comunicação</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUB-BODY -->
+    <div class="subbody">
+        <!-- TXT SuperDev -->
+        <div>
+            <div id="politica">
+                <h2 class="titleCursos">Política</h2>
+            </div>
+
+            <div class="txtbuttCursos">
+                <div class="txtCursos">
+                    <h1>Mais recentes:</h1>
+    
+                    <p> Acordo Nuclear com o Irã: "Potências Mundiais Alcançam Acordo Histórico sobre Programa Nuclear Iraniano."<br><br>
+
+                        Crise Migratória na Europa: "Crise de Refugiados na Europa Desafia Líderes e Desperta Debates sobre Políticas de Imigração."<br><br>
+                        
+                        Eleições Gerais no Reino Unido: "Vitória Surpreendente do Partido Conservador nas Eleições Britânicas."<br><br>
+                        
+                        Cúpula do Clima em Paris: "Acordo Climático Global: Países Unem Esforços para Combater as Mudanças Climáticas."<br><br>
+                        
+                        Crise na Ucrânia: "Tensões Persistem na Ucrânia após Acordos de Paz Frágeis."<br><br>
+                        
+                        Eleições Presidenciais na Argentina: "Mudança Política na Argentina: Vitória de Mauricio Macri nas Eleições Presidenciais."<br><br>
+                        
+                        Crise Econômica na Grécia: "Negociações e Tensões: Grécia Enfrenta Desafios Financeiros e Busca Acordo com Credores."<br><br>
+                    </p>
+                </div>
+
+                <div class="buttCursos">
+                    <button class="bcitem1" onclick="siteFigmaVideo()">COMECE AGORA!</button>
+                </div>
+            </div>
+        </div>  
+        
+        <!-- TXT esportes -->
+        <div id="esportes">
+            <h2 class="titleCursos">Esportes</h2>
+        </div>
+
+        <div class="txtbuttCursos">
+            <div class="txtCursos">
+                <h1>Mais Recentes:</h1>
+                <p>
+                    Copa do Mundo da FIFA no Brasil: "Alemanha Conquista a Copa do Mundo Após Vitória Épica sobre a Argentina."<br><br>
+
+    Jogos Olímpicos de Inverno em Sochi: "Sochi 2014: Destaques e Medalhas em uma Olimpíada de Inverno Memorável."<br><br>
+
+    Aposentadoria de Derek Jeter: "Lenda do Beisebol, Derek Jeter, Anuncia Sua Última Temporada com os New York Yankees."<br><br>
+
+    Super Bowl XLVIII: "Seattle Seahawks Dominam o Denver Broncos e Conquistam o Super Bowl XLVIII."<br><br>
+
+    Vitória de Novak Djokovic em Wimbledon: "Novak Djokovic Supera Roger Federer em uma Épica Final de Wimbledon."<br><br>
+
+    Lesão de Neymar na Copa do Mundo: "Neymar Sofre Lesão Nas Costas e Brasil é Eliminado da Copa do Mundo."<br><br>
+
+    Recorde de Medalhas de Michael Phelps: "Michael Phelps Torna-se o Atleta Olímpico Mais Decorado da História."<br><br>
+
+                </p>
+            </div>
+
+            <div class="buttCursos">
+                <button class="bcitem1" onclick="siteFigmaVideo()">VEJA MAIS!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="economia">
+            <h2 class="titleCursos">Economia</h2>
+        </div>
+
+        <div class="txtbuttCursos">
+            <div class="txtCursos">
+                <h1>Mais Recentes:</h1>
+                <p>
+                    Crise Financeira na Ucrânia: Tensões políticas e a anexação da Crimeia pela Rússia levaram a uma crise financeira na Ucrânia, com implicações econômicas para a região.<br><br>
+
+Desaceleração Econômica na China: O crescimento econômico da China começou a desacelerar, gerando preocupações sobre o impacto nas economias globais devido à importância crescente da China no comércio internacional.<br><br>
+
+Banco Central Europeu Adota Política Monetária Estimulativa: Em resposta às preocupações com a deflação, o Banco Central Europeu (BCE) implementou medidas de estímulo, incluindo cortes nas taxas de juros e a introdução de programas de compra de ativos.<br><br>
+
+IPO da Alibaba: A Alibaba, gigante chinesa do comércio eletrônico, realizou uma oferta pública inicial (IPO) em setembro de 2014, sendo uma das maiores da história e tendo um impacto significativo no mercado.<br><br>
+
+Preço do Petróleo em Queda: O preço do petróleo começou a cair acentuadamente em meados de 2014, devido a uma combinação de aumento da produção de petróleo de xisto nos Estados Unidos e preocupações com o crescimento econômico global.<br><br>
+
+Sanções Econômicas contra a Rússia: Em resposta à anexação da Crimeia, várias nações ocidentais impuseram sanções econômicas à Rússia, afetando setores como finanças, energia e defesa.<br><br>
+
+Elevação das Taxas de Juros nos EUA: O Federal Reserve começou a sinalizar o fim do período de juros próximos a zero, preparando o terreno para o início da normalização da política monetária.<br><br>
+                </p>
+            </div>
+
+            <div class="buttCursos">
+                
+                <button class="bcitem1" onclick="siteFigmaVideo()">VEJA MAIS!</button>
+            </div>
+        </div>
+
+        <div id="diversos">
+            <h2 class="titleCursos">Diversos</h2>
+        </div>
+
+        <div class="txtbuttCursos">
+            <div class="txtCursos">
+                <h1>Mais Recentes:</h1>
+                <p>
+                    Copa do Mundo da FIFA no Brasil: O evento esportivo mais destacado de 2014 foi a Copa do Mundo de Futebol realizada no Brasil. A Alemanha sagrou-se campeã ao derrotar a Argentina na final.<br><br>
+
+Ebola na África Ocidental: O surto de Ebola atingiu países como Guiné, Libéria e Serra Leoa em 2014, causando preocupações globais de saúde pública.<br><br>
+
+Protestos em Hong Kong: Em setembro de 2014, manifestantes em Hong Kong exigiam mais democracia e protestavam contra as restrições impostas pela China no processo de eleição do chefe do Executivo local.<br><br>
+
+Sanções contra a Rússia: Após a anexação da Crimeia pela Rússia, várias nações impuseram sanções econômicas ao país em 2014.<br><br>
+
+Lançamento do iPhone 6: A Apple lançou o iPhone 6 e o iPhone 6 Plus, introduzindo telas maiores e outras atualizações significativas.<br><br>
+
+Desafio do Balde de Gelo (Ice Bucket Challenge): Uma campanha de arrecadação de fundos para a pesquisa da Esclerose Lateral Amiotrófica (ELA) viralizou nas redes sociais, levando milhões de pessoas a despejarem baldes de gelo sobre si mesmas.<br><br>
+
+A morte de Robin Williams: O renomado ator e comediante Robin Williams faleceu em agosto de 2014, deixando o mundo do entretenimento de luto.<br><br>
+
+O pouso da sonda Philae no cometa: A sonda espacial Philae, da Agência Espacial Europeia, fez história ao pousar no cometa 67P/Churyumov-Gerasimenko, fornecendo dados cruciais sobre a composição dos cometas.<br><br>
+                </p>
+            </div> 
+
+            <div class="buttCursos">
+                
+                <button class="bcitem1" onclick="siteFigmaVideo()">VEJA MAIS!</button>
+            </div>
+    </div>
+
+
+</body>
+</html>
+
+<script src="SiteInicial.js">
+    
+</script>
+
